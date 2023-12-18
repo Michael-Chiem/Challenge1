@@ -1,13 +1,16 @@
+/* This is a universal selector. It applies the settings below to elements that haven't been specifically defined for this page. */
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
+/* This specific collector sets the background color of the body to grey. */
 body {
     background-color: #d9dcd6;
 }
 
+/* This class acts as a collector for styling the header section element. It includes a blue background with padding, employs Trebuchet MS as the default font, and sets the font color to white. */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,16 +18,19 @@ body {
     color: #ffffff;
 }
 
+/* This class acts as a collector and is pivotal for the page layout. The 'display: inline-block' property is essential to prevent distortion of all headings. Specifically, headline number one will be configured to display inline-block, aligning it side by side. Its font size is set to 48 pixels. */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* This class serves as a collector specifically designated to set the color for the letters 'S E O' */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* This class selector configures the padding section using the specified values below. */
+.header section {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,49 +38,85 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+/* This class selector defines that no list ordering will be applied to elements of this type within the header section. */
+.header section ul {
+    list-style-type: underline;
 }
 
-.header div ul li {
+/* This class selector applies an inline-block display to the section header and sets a left margin of 25 pixels for unordered lists and list items. */
+.header section ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* This selector defines that any element starting with the letter 'a' will have white text color applied. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* This selector applies the font size to elements with the 'p' tag */
 p {
     font-size: 16px;
 }
 
+/* This class collector applies the specified values to the section elements, particularly focusing on the main image featuring a standing man. */
 .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: right;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/* This class selector establishes a 20-pixel margin from the left frame and sets a box size of 75%. It ensures all elements display from left to right. */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* When applied to an image element, this class selector will shift the image to the left. */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* When applied to an image element, this class selector will shift the image to the right. */
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* This class selector applies to the listed elements within sections. The provided values create margins, introduce a blue text box, establish a 25px space below the box, set font styles, define padding areas, and set the font color to white. */
+.search-engine-optimization,
+.online-reputation-management,
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* This class selector applies to all sections containing matching elements, allowing the image size to be set at 200 pixels. */
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+/* This class collector applies specifically to the 'h2' section, ensuring a 20px space from the paragraph below, while setting the font size to 36 pixels. */
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* This class collector is applied to elements within this section. It dictates left-side padding for sections containing 'Lead Generation,' 'Cost Management,' and 'Brand Awareness.' Additionally, it ensures text does not overlay the images. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,115 +128,35 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
+/* These class selectors command each section to maintain a 32px space and utilize white font color. */
+.benefit-lead,
+.benefit-brand,
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
+/* These class selectors, applied to sections with 'h3', command a 10px space from the bottom and center-align the text. */
+.benefit-lead h3,
+.benefit-brand h3,
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
+/* These class selectors, applied to sections with 'img', command a value set below. */
+.benefit-lead img,
+.benefit-brand img,
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* This is a class selector and it uses for footer section. */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-
-.footer h2 {
     font-size: 20px;
 }
