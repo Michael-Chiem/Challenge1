@@ -19,13 +19,13 @@ body {
 }
 
 /* This class acts as a collector and is pivotal for the page layout. The 'display: inline-block' property is essential to prevent distortion of all headings. Specifically, headline number one will be configured to display inline-block, aligning it side by side. Its font size is set to 48 pixels. */
-.header h1 {
+.header header {
     display: inline-block;
     font-size: 48px;
 }
 
 /* This class serves as a collector specifically designated to set the color for the letters 'S E O' */
-.header h1 .seo {
+.header header .seo {
     color: #d9dcd6;
 }
 
